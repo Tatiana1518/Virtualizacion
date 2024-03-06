@@ -3,13 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUEES</title>
+    <title>Vitualización</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+
 </head>
 <body>
     <div class="menu">
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox"></label>
-        <div class></div>
+        <a href="#que-es">¿Que es?</a>
+        <a href="#como-funciona">¿Como Funciona?</a>
+        <a href="#ventajas">Ventajas</a>
+        <a href="#desventajas">Desventajas</a>
+        <a href="#importancia">Importancia</a>
     </div>
+    <div class="section" id="que-es">
+        <h2>¿Que es la Virtualización?</h2>
+        <p>El concepto de virtualización hace referencia 
+            a una tecnología que permite la ejecución de varias 
+            máquinas virtuales sobre una máquina física con el 
+            objetivo de aprovechar al máximo los recursos de un 
+            sistema y que su rendimiento sea mayor. 
+            Es importante destacar que a cada una de las máquinas 
+            virtuales se le pueden asignar unos recursos (memoria, 
+            unidades de almacenamiento, procesador…) y ejecutan una 
+            copia propia de sistema operativo (Windows, Linux…). 
+            Cuando virtualizamos, creamos un entorno informático virtual 
+            en el que cada máquina puede cumplir funciones diferentes 
+            (servidor web, servidor de archivos…) aun encontrándose 
+            todas en la misma máquina física. Esto nos ofrece la posibilidad 
+            de crear instancias con distintos sistemas operativos en un único servidor, 
+            utilizando así menos servidores para ejecutar una mayor cantidad de aplicaciones.
+        </p>
+    </div>
+    <div class="section" id="como-funciona">
+        <h2>¿Como funciona la Virtualizacion?</h2>
+        <p>Hay dos elementos fundamentales a la hora de explicar cómo funciona la virtualización:
+
+            Máquina virtual Es el corazón de la virtualización. 
+            Se crea completamente por software y puede ejecutar 
+            sistemas operativos y aplicaciones. Además, 
+            se encuentra respaldada por los recursos de un servidor físico.
+            Hipervisor Es el que se encarga de crear una capa de 
+            virtualización. Asigna dinámicamente a cada máquina virtual 
+            los recursos que necesita, para que independientemente del sistema 
+            operativo que utiliza, crea que el hardware físico del servidor 
+            principal está a su disposición. Es de vital importancia que funcione 
+            correctamente para obtener de las máquinas virtuales el resultado esperado, 
+            pero para que esto ocurra debemos asegurarnos siempre de que tanto el 
+            almacenamiento como los componentes de la red funcionan bien.
+            
+            Cuando instalamos cualquier sistema operativo en una de las máquinas virtuales, 
+            este va a funcionar con el mismo patrón y método que en una máquina física 
+            (licencias, actualizaciones…) por lo que también es susceptible de ser atacado. 
+            Esto nos lleva a pensar que es muy importante, en caso de que la máquina 
+            no haya sido creada para probar ataques en ella, que se utilicen herramientas 
+            de seguridad (antivirus, cifrado, actualización continua…) para evitar poner en 
+            peligro nuestra privacidad.</p>
+    </div>
+    <div class="section" id="ventajas">
+        <h2>Ventajas de la Virtualización</h2>
+        <p>
+            Reduce riegos y costes: Se simplifican las instalaciones al necesitar un único servidor físico para poner en funcionamiento varios servidores virtuales. También se ahorra espacio, tiempo, dinero y seguridad.
+
+            Ofrece la posibilidad de monitorización: Es muy importante realizar un seguimiento del comportamiento de las máquinas virtuales, sobre todo si su capacidad y rendimiento están siendo adecuados. Esto es esencial para que se puedan tener controladas las incidencias o problemas que puedan darse.
+            
+            Habilita la migración en caliente de máquinas virtuales: Hace que se puedan migrar máquinas de un servidor a otro sin realizar cortes en el servicio, eliminando la necesidad de planificarlo.
+            
+            Mejora los procesos de clonación y copias de seguridad: La realización de backup de cada una de las máquinas virtuales es mucho más fácil y rápida, lo que aporta seguridad a la hora de restaurar máquinas en poco tiempo, en caso de que sufran algún tipo de ataque o problema.
+            
+            Menor consumo energético: Donde anteriormente se necesitaban varios equipos conectados en todo momento, ahora se necesita un único equipo con todas las máquinas virtuales incluidas en él. Esto hace que el ahorro de energía sea considerable.
+            
+            Hace fácil la recuperación ante desastres: Con el uso de la virtualización ganamos seguridad cuando ocurre algún desastre grave. Se pueden crear copias o imágenes de los sistemas continuamente o antes de hacer actualizaciones, para que el tiempo de recuperación sea el mínimo.
+            
+            Hace más fácil la administración y posibilita una gestión centralizada: Hacer uso de servidores virtuales aporta sencillez en aspectos como; realizar actualizaciones, instalaciones de programas, mantener la seguridad, etcétera. De esta forma todo será mucho más fácil de gestionar desde cualquier lugar, lo que mejorará incluso el rendimiento de los trabajadores.
+            
+            Aporta seguridad al crear entornos aislados: Las conexiones a Internet se harán en entornos seguros y un fallo en una de las máquinas virtuales no afectará al resto ni a la máquina principal.
+            
+            Permite añadir rápidamente nuevos recursos a los servidores virtualizados: En tan solo minutos se podrían asignar servidores y almacenamientos adicionales para satisfacer la demanda según las necesidades que surjan en la organización.
+            
+            Al no tener tanta cantidad de componentes físicos que puedan fallar, no es necesario tanto mantenimiento por parte del administrador. También al ofrecer la posibilidad de monitorización, es más fácil saber qué ha ocurrido y en qué componente (al pertenecer siempre al mismo servidor principal).
+            
+            Aporta una mayor disponibilidad y fiabilidad.</p>
+    </div>
+    <div class="section" id="desventajas">
+        <h2>Desventajas de la Virtualización</h2>
+        <p>En caso de que la empresa sea pequeña, la gran inversión que hay que realizar en software al principio puede convertirse en un obstáculo si no se dispone de recursos suficientes, ya que el consumo de RAM y espacio, entre otros recursos, suele ser muy elevado.
+
+            El rendimiento de las máquinas virtuales es un poco más bajo que el de un servidor físico.
+            
+            La máquina física sobre la que se ejecutan las máquinas virtuales es muy crítica: Cualquier falla en uno de sus componentes hardware afectaría a todas las máquinas virtuales que usen este recurso.
+            
+            Algunos proveedores de máquinas virtuales cobran licencias por cada máquina virtual y por el uso de CPU de estas.
+            
+            Si la planificación previa es incorrecta y no se tienen en cuenta la cantidad de servidores y recursos que se necesitan, puede llegar a darse la saturación de servidores.
+            
+            Cuando se implementa la virtualización en una empresa es necesario que los administradores sepan utilizar las herramientas en las nuevas herramientas. Esto puede verse como un beneficio porque van a aprender nuevas utilidades o como una desventaja porque tienen que dedicar tiempo, que a veces no tienen para hacerlo, y la dificultad de algunas herramientas puede ser alta.</p>
+    </div>
+    <div class="section" id="importancia">
+        <h2>Importancia de la Virtualización</h2>
+        <p>En primer lugar, por lo que a día de hoy más se usa es para la ejecución de software disponible sólo en sistemas operativos diferentes al nuestro. Ejemplo muy común, como usuario de mac OS queremos usar un programa solo disponible para Windows, en este caso podemos crear un entorno Windows dentro de nuestro mac OS y ejecutar ese programa sin problema alguno. Otro ejemplo podría ser estar en un Windows como sistema y necesitar cierta funcionalidad solo disponible en un Linux. Como estos muchos otros ejemplos pueden suceder, y para esto la virtualización es la solución más cómoda y efectiva, por no decir económica.
+            Por otro lado tenemos la seguridad, todos alguna vez hemos hecho uso de internet para descargar archivos o programas de fuentes de dudosa procedencia, y esto suele ser la principal causa de infección de virus para nuestro PC, originando desde pérdidas de datos hasta colapsar el PC completo y hacerlo irreparable. Ante esto, si creamos un sistema paralelo en el que probamos estas descargas aislamos ese virus de forma que lo peor que puede pasar es que rompa esa máquina virtual, pero no afectará en nada a nuestro sistema. Es más, esta técnica es muy usada por expertos en ciberseguridad para analizar virus y crear contramedidas a ellos.
+            Por estos motivos y más, como podrían ser la limpieza de nuestro sistema, no creamos archivos basura si queremos probar un programa que finalmente desinstalamos, la virtualización es algo que cualquier usuario puede usar y debería usar en su día a día.</p>
+    </div>
+
 </body>
 </html>
